@@ -6,7 +6,7 @@
 * STM32F103 failsafe co-processor
 * ardupilot飞控代码
 * pixhawk接口兼容
-* USB(RPi)/Servo Rail BEC/Power Module三路电源输入
+* USB(RPi) / Servo Rail BEC / Power Module三路电源输入
 
 传感器
 * ST Micro L3GD20H 16位陀螺仪
