@@ -35,6 +35,9 @@
 <br>
 2 接口说明：<br>
 ![](https://github.com/raspilot/docs/blob/master/connectors.jpg)<br>
+<br>
+3 减震安装<br>
+震动对飞控的定高性能影响很大，安装时需注意对飞控做好减震处理。<br>
 
 ###写入系统镜像到树莓派SD卡###
 树莓派官方的Linux系统实时性不适合运行飞控程序，因此要使用打了RT-patch的系统镜像。<br>
