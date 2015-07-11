@@ -40,8 +40,12 @@
 树莓派官方的Linux系统实时性不适合运行飞控程序，因此要使用打了RT-patch的系统镜像。<br>
 首先下载和解压Linux系统的镜像文件。目前还没来得及自己编译，暂时借用emlid打包的镜像。<br>
 <br>
-　树莓派1代：https://mega.co.nz/#!RVJxHJpI!QVPTZaNY0AiuPbcxQjOTmZ2un6d0j7W3g1jwheuotUc<br>
-　树莓派2代：https://mega.co.nz/#!0VZFzbwC!6tTzWFKl8jdR4Q52A9A03wYyAPghIDKtxGpavNMBKn4<br>
+　树莓派1代<br>
+　　百度网盘：http://pan.baidu.com/s/1kTEKmCv<br>
+　　Mega网盘：https://mega.co.nz/#!RVJxHJpI!QVPTZaNY0AiuPbcxQjOTmZ2un6d0j7W3g1jwheuotUc<br>
+　树莓派2代<br>
+　　百度网盘：http://pan.baidu.com/s/1qWsVr9y<br>
+　　Mega网盘：https://mega.co.nz/#!0VZFzbwC!6tTzWFKl8jdR4Q52A9A03wYyAPghIDKtxGpavNMBKn4<br>
 <br>
 然后按照树莓派的官方教程将镜像文件写入SD卡：<br>
 <br>
@@ -105,3 +109,7 @@
 * 通过WiFi同步到树莓派：<br>
 　`rsync -avz /tmp/ArduCopter.build/ArduCopter.elf pi@192.168.1.100:/home/pi/`<br>
 　其中`192.168.1.100`改为树莓派的实际IP地址<br>
+
+###修改I2C波特率###
+系统默认的I2C波特率是1MHz，可以在/etc/modprobe.d/i2c.conf中修改波特率。<br>
+　`sudo nano /etc/modprobe.d/i2c.conf`<br>
