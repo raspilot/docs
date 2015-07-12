@@ -71,7 +71,9 @@
 ###安装和设置飞控程序###
 1 下载飞控程序<br>
 　ArduCopter.elf 百度网盘下载地址：http://pan.baidu.com/s/1hqJ9ZbY （1、2代树莓派均可使用）<br>
-　下载后放到树莓派用户根目录，即/home/pi目录中<br>
+　下载后放到树莓派用户根目录，即/home/pi目录中。<br>
+　修改ArduCopter.elf可执行权限：<br>
+　`chmod +x ArduCopter.elf`<br>
 <br>
 2 运行飞控程序<br>
 　`sudo ./ArduCopter.elf -B /dev/ttyAMA0`<br>
